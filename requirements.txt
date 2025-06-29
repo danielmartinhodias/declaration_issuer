@@ -2,3 +2,4 @@ streamlit
 docx
 docx2pdf
 Pygments
+exceptions
