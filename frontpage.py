@@ -40,6 +40,8 @@ with st.form("my_form"):
 
 # After form submission
 if submitted:
+  if not nome or not cc or not inicio_ausencia or not fim_ausencia or not agree:
+    st.error("Please fill in all required fields (Name and Email).")
   try:
     success_string=f"Eu, Daniel Martinho Ferreira Dias, portador da cédula profissional 63783, venho por este meio declarar que {nome}, portador do CC/BI {cc}, encontra-se doente, com incapacidade laboral desde {inicio_ausencia} e previsível até {fim_ausencia}. Por ser verdade e me ter sido pedido, emito a presente declaração que dato e assino"
     st.success(success_string)
