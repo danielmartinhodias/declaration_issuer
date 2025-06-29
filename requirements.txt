@@ -1,6 +1,4 @@
 streamlit
-datetime
-smtplib
 email.mime
 docx
 docx2pdf
