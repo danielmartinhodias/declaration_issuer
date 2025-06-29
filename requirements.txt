@@ -4,3 +4,4 @@ smtplib
 email.mime
 docx
 docx2pdf
+Pygments
