@@ -57,9 +57,9 @@ if submitted:
     paragraph2=doc.add_paragraph(success_string)
     paragraph2.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
-    doc.save(f"./issued/dec_doenca{nome}.docx")
+    doc.save(f"./issued/declaracoes/dec_doenca{nome}.docx")
 
-    convert(f"./issued/dec_doenca{nome}.docx")
+    convert(f"./issued/declaracoes/dec_doenca{nome}.docx")
 
       # Email credentials
     sender_email = "danielmartinhodias@gmail.com"
@@ -79,7 +79,7 @@ if submitted:
     mensagem = f'Para validação de pedido de declaração de ausência de {nome}, submetida em {timestamp}'
     msg.attach(MIMEText(mensagem, 'plain'))
 
-    anexos = [f"./issued/dec_doenca{nome}.docx", f"./issued/dec_doenca{nome}.pdf"]
+    anexos = [f"./issued/declaracoes/dec_doenca{nome}.docx", f"./issued/declaracoes/dec_doenca{nome}.pdf"]
 
     # Anexar arquivos
     for ficheiro in anexos:
